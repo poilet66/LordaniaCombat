@@ -82,7 +82,7 @@ public class CombatTag implements Listener {
                 while (it.hasNext()) {
                     Player p = it.next().getPlayer();
 
-                    if (combatList.get(p) == System.currentTimeMillis() / 1000) {
+                    if (combatList.get(p) <= System.currentTimeMillis() / 1000) {
                         p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1f, 1f);//You lost your tagPlayer
                         p.sendMessage("§eCombatTag: §9[OFF]");
                         it.remove();
