@@ -1,0 +1,5 @@
+name: LordaniaCombat
+version: ${project.version}
+main: lordania.lordaniacombat.main.LordaniaCombat
+depend: [ProtocolLib, CoreProtect, Towny, WorldGuard]
+api-version: 1.15
